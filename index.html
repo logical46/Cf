@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sweetheart ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --deep-red:#5a0000;
+    --red:#8B0000;
+    --gold:#D4AF37;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    background:linear-gradient(160deg,#2b0000,#120000);
+    color:white;
+    font-family:'Playfair Display',serif;
+    overflow-x:hidden;
+}
+
+/* Falling Roses */
+.rose{
+    position:fixed;
+    top:-10px;
+    font-size:20px;
+    animation:fall linear infinite;
+    z-index:0;
+}
+
+@keyframes fall{
+    to{transform:translateY(110vh) rotate(360deg);opacity:0;}
+}
+
+/* Intro */
+.intro{
+    position:fixed;
+    inset:0;
+    background:radial-gradient(circle,#3a0000,#120000);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:1000;
+    transition:1.5s ease;
+}
+
+.intro h1{
+    font-size:3rem;
+    color:var(--gold);
+    margin-bottom:30px;
+}
+
+.intro button{
+    padding:15px 40px;
+    background:var(--gold);
+    border:none;
+    border-radius:30px;
+    font-family:'Poppins',sans-serif;
+    letter-spacing:3px;
+    cursor:pointer;
+}
+
+.hidden{opacity:0;pointer-events:none}
+
+/* Sections */
+section{
+    padding:120px 20px;
+    max-width:850px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+h2{
+    text-align:center;
+    font-size:2.8rem;
+    color:var(--gold);
+    margin-bottom:40px;
+}
+
+p{
+    font-size:1.25rem;
+    line-height:2;
+    margin-bottom:25px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:1s ease;
+}
+
+.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Secret */
+.secret{
+    text-align:center;
+    margin-top:40px;
+    color:var(--gold);
+    font-family:'Poppins',sans-serif;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.secret-message{
+    display:none;
+    margin-top:20px;
+    font-style:italic;
+    text-align:center;
+    font-size:1.4rem;
+}
+
+/* Final */
+.final{
+    text-align:center;
+    padding:150px 20px;
+}
+
+.final h1{
+    font-size:3.5rem;
+    color:var(--gold);
+    margin-bottom:30px;
+}
+
+button.unlock{
+    padding:18px 50px;
+    background:linear-gradient(45deg,var(--gold),#ffcc00);
+    border:none;
+    border-radius:40px;
+    font-family:'Poppins',sans-serif;
+    letter-spacing:4px;
+    cursor:pointer;
+}
+
+#foreverText{
+    display:none;
+    margin-top:30px;
+    font-size:1.6rem;
+    font-style:italic;
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="intro" id="intro">
+    <h1>Happy Birthday, My Sweetheart ❤️</h1>
+    <button onclick="enter()">UNLOCK</button>
+</div>
+
+<section>
+<h2>My Love…</h2>
+
+<p>Today is more than just another day. It is a celebration of you — your light, your strength, your softness, your growth.</p>
+
+<p>Another year of your presence in this world is something worth honoring deeply.</p>
+
+<p>You are not just someone I care about. You are someone I see. Someone I respect. Someone I choose intentionally.</p>
+
+<p>My Queen. My Heartbeat. My Safe Haven.</p>
+
+<div class="secret" onclick="revealSecret()">Tap here… this is from my heart ❤️</div>
+<div class="secret-message" id="secretMessage">
+On your birthday, I don’t just celebrate the day you were born — I celebrate the woman you are becoming.
+</div>
+
+</section>
+
+<section>
+<h2>If Love Had A Meaning</h2>
+
+<p>It would look like your smile.</p>
+<p>It would sound like your laughter.</p>
+<p>It would feel like the peace I feel when I know you're in my life.</p>
+
+<p>I may not always have the biggest gifts, but this… this was built with my own hands. Every word placed here carries intention.</p>
+
+<p>Because love is not about what you spend. It is about what you build.</p>
+
+<p>And on your birthday, I want you to know — you are deeply valued, deeply respected, and deeply loved.</p>
+<p>You are more than beautiful. You are thoughtful in ways people don’t always notice. You care deeply, even when you pretend not to. You carry strength quietly.</p>
+
+<p>I admire your mind. The way you think. The way you express yourself. The way you stand for what you believe in.</p>
+
+<p>Sometimes I sit back and just appreciate that someone like you exists in my life. Not because you are perfect — but because you are real.</p>
+
+<p>And on your birthday, I want you to know something very clearly: you are not loved for what you give me. You are loved for who you are.</p>
+
+<p>This page may just be code and words, but behind it is intention. Behind it is time. Behind it is a man who chose to build something instead of just buying something.</p>
+
+<p>That is how I love — intentionally.</p>
+
+<p style="opacity:1; font-style:italic; margin-top:60px;">
+Forever yours,  
+Miracle 🤍
+</p>
+
+<p style="opacity:1; font-style:italic; margin-top:20px; color:gold;">
+For my Sweetheart. My Soft Place. My Always.
+</p>
+
+</section>
+
+<div class="final">
+<h1>I Choose You ❤️</h1>
+<button class="unlock" onclick="finalMessage()">TODAY & ALWAYS</button>
+<p id="foreverText">
+May this new chapter bring you confidence, growth, joy, and the kind of love that feels safe — and may I always be someone who supports your light.
+</p>
+</div>
+
+<script>
+function enter(){
+document.getElementById("intro").classList.add("hidden");
+document.getElementById("bgMusic").play();
+}
+
+function revealSecret(){
+document.getElementById("secretMessage").style.display="block";
+}
+
+function finalMessage(){
+document.getElementById("foreverText").style.display="block";
+}
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+});
+document.querySelectorAll("p").forEach(p=>observer.observe(p));
+
+setInterval(()=>{
+const rose=document.createElement("div");
+rose.classList.add("rose");
+rose.innerHTML="🌹";
+rose.style.left=Math.random()*100+"vw";
+rose.style.animationDuration=(Math.random()*5+5)+"s";
+document.body.appendChild(rose);
+setTimeout(()=>rose.remove(),10000);
+},500);
+</script>
+
+</body>
+</html>
